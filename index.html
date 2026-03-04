@@ -12,12 +12,18 @@
   <body>
     <div class="wrapper">
       <h1>Text Concatenator</h1>
+      <p class="subtitle">Split words and join them with any character</p>
       <div class="container">
         <div class="left">
-          <textarea id="text-input" placeholder="Enter your text here..."></textarea>
-          <input type="text" id="delimiter-input" placeholder="Enter delimiter..." />
+          <label for="text-input">Enter your text</label>
+          <textarea id="text-input" class="input-field" placeholder="e.g. apple banana cherry"></textarea>
+          <label for="delimiter-input">Delimiter</label>
+          <input type="text" id="delimiter-input" class="input-field" placeholder="e.g. , or -" />
         </div>
-        <div id="output-box"></div>
+        <div class="right">
+          <span class="label">Result</span>
+          <div id="output-box"></div>
+        </div>
       </div>
     </div>
     <script src="app.js"></script>
